@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" class="logo">CHACHOUMA</a>
+        <div class="nav-link">
+            <ul>
+                <li class="rouge"><a href="#">Acceuil</a></li>
+                <li><a href="#">Visite</a></li>
+                <li><a href="#">Randonnes</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="img/hamburger menu white.png" alt="" class="menuhamburger">
+    </nav>
+    <header></header>
+    
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menuhamburger")
+    const navLinks = document.querySelector(".nav-link")
+    
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

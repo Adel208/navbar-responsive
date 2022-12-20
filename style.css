@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/land.jpeg);
+    background-size: cover;
+
+}
+.navbar{
+    position: absolute;
+    padding:50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+.navbar a{
+    color: rgb(241, 244, 247);
+}
+
+.rouge a:hover {
+        color:aliceblue;
+}
+
+.navbar .logo{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.navbar .nav-link ul{
+    display:flex ;
+}
+
+.navbar .nav-link ul li{
+    margin: 0 25px
+}
+
+.navbar .nav-link ul li.rouge a{
+    color:#f60404;
+    font-weight:70 ;
+}
+
+.navbar .menuhamburger {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right:30px;
+    width :50px;
+    text-decoration: 
+    }
+    .nav-link.mobile-menu{
+        margin-left: 0;
+    }
+
+    .titre-site{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+@media screen and (max-width:900px) {
+    .navbar .logo{
+        position: absolute;
+        top: 58px;
+        left: 30px;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .navbar .menuhamburger{
+        display: block;
+        width: 60px;
+        margin-right: 15px;
+    }
+
+    .nav-link{
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.20) ;
+        backdrop-filter: blur(2px);
+        width:100%;
+        height:100vh;
+        top:0;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition:all 0.5s ease-in-out;  
+    }
+    .nav-link ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar .nav-link ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
